@@ -3,12 +3,22 @@ Botto es un bot de Slack que permite acceder a cierta informacion de un servidor
 
 # Instalacion
 
-git clone https://github.com/NicorRodriguez/Botto.git
+Docker:
 
-Change the values of SLACK_BOT_AUTH and serv to match your own on src/constants.js
+	git clone https://github.com/NicorRodriguez/Botto.git
 
-docker build . -t (name of the image that you want)
+	Cambiar los valores de SLACK_BOT_AUTH y serv con la token del bot y la url del servidor de Redmine en src/constants.js
 
-docker run -d (name of the image set before)
+	docker build . -t (nombre de la imagen)
 
-Now you have your Slack bot running on docker.
+	docker run -d (nombre de la imagen creada anteriormente)
+
+Local:(npm y node como requisitos)
+
+	git clone https://github.com/NicorRodriguez/Botto.git
+
+	Cambiar los valores de SLACK_BOT_AUTH y serv con la token del bot y la url del servidor de Redmine en src/constants.js
+
+	npm install
+
+	node src/index.js
