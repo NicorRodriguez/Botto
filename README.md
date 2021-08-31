@@ -13,7 +13,7 @@ Docker:
 
 	docker run -d (nombre de la imagen creada anteriormente)
 
-Local:(npm y node como requisitos)
+Local: (npm y node como requisitos)
 
 	git clone https://github.com/NicorRodriguez/Botto.git
 
